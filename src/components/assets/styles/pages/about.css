@@ -1,0 +1,40 @@
+.about-container {
+    width: 100%;
+}
+
+.about-content-container {
+    width: 69vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.about-me-container {
+    margin-top: 100px;
+    margin-bottom: 20vh;
+}
+
+.about-skill-container {
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.about-exp-educ-container {
+    margin: 15px 0;
+}
+
+.about-skill-container p{
+    width: 35vw;
+    justify-content: center;
+    margin: 5px 10px;
+    transition: ease-in-out 0.3s;
+}
+
+.about-skill-container p:hover {
+    background-color: salmon;
+    transform: translateX(1000);
+}
