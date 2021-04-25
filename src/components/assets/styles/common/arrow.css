@@ -1,0 +1,30 @@
+.arrow-container {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.arrow {
+    background-color: salmon;
+    width: 50px;
+    height: 5px;
+    border-radius: 50px;
+    position: absolute;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .arrow-container {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+}
