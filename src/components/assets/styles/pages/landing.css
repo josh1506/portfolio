@@ -1,0 +1,33 @@
+.landing-container {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.landing-message {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.landing-name {
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+.landing-role {
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin-top: 30px;
+}
+
+.landing-content-container {
+    width: 100px;
+    display: inline-block;
+}
+
+.landing-image-container {
+    width: 50vw;
+    height: 100px;
+}
