@@ -216,11 +216,7 @@ const About = (props) => {
         },
     ]
 
-    
   const {y} = useWindowScroll();
-  
-    console.log(`x: ${y / 100}, y: ${y}`)
-    
 
     return (
         <React.Fragment>
