@@ -28,6 +28,9 @@ const arrowTop = {
         transition: {
             duration: 0.2
         }
+    },
+    onExit: {
+        opacity: 0,
     }
 }
 
@@ -50,10 +53,13 @@ const arrowBottom = {
     onClick: {
         rotate: [-65, 0, 0], 
         y: [-22, 0, 0], 
-        x:[0, 0, -90], 
+        x: [0, 0, -90], 
         transition: {
             duration: 0.2
         }
+    },
+    onExit: {
+        opacity: 0,
     }
 }
 
@@ -64,16 +70,22 @@ const LeftArrow = (props) => {
     return (
         <div 
             className='arrow-container' 
-            style={{left: 0, borderRight: '2px salmon solid'}}  
+            style={{left: 0, borderRight: '2px #4acfac solid'}}  
             onMouseEnter={() => setBtnRightHover(true)} 
             onMouseLeave={() => setBtnRightHover(false)}
-            onClick={() => setBtnRightClick(true)}
+            onClick={() => {
+                setBtnRightClick(true)
+                setTimeout(() => {
+                    props.history.push(`/${props.route}`)
+                }, 500);
+            }}
         >
             <div>
                 <motion.div
                     variants={arrowTop}
                     initial='hidden'
                     animate={btnRightClick ? 'onClick' : btnRightHover? 'onHover' : 'visible'}
+                    exit='onExit'
                     className='arrow'
                     style={{left: 0}}
                 />
@@ -81,6 +93,7 @@ const LeftArrow = (props) => {
                     variants={arrowBottom}
                     initial='hidden'
                     animate={btnRightClick ? 'onClick' : btnRightHover? 'onHover' : 'visible'}
+                    exit='onExit'
                     className='arrow'
                     style={{left: 0}}
                 />
