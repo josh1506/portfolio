@@ -111,17 +111,16 @@ const Projects = (props) => {
     const [projectList, setProjectList] = useState([
         {
             id: 1,
-            img: projInstaGive,
-            name: 'InstaGive (Thesis)',
-            description: 'A web base donation platform for the province of Pampanga.',
+            img: projTraq,
+            name: 'Traq',
+            description: 'A URL tracker for measure the success of your marketing campaigns, helping you to track the number of visitors of your link.',
             onHover: false,
-            link: 'https://traq.vercel.app/url/uaw2C',
+            link: 'https://traq.vercel.app/url/AesHz',
             techStack: [
-                {id: 1, name: 'MongoDB'},
-                {id: 2, name: 'Express'},
-                {id: 3, name: 'React'},
-                {id: 4, name: 'Node'},
-                {id: 5, name: 'Redux'},
+                {id: 1, name: 'Django'},
+                {id: 2, name: 'React'},
+                {id: 3, name: 'Redux'},
+                {id: 4, name: 'PostgreSQL'},
             ]
         },
         {
@@ -140,26 +139,27 @@ const Projects = (props) => {
         },
         {
             id: 3,
-            img: projTraq,
-            name: 'Traq',
-            description: 'A URL tracker for measure the success of your marketing campaigns, helping you to track the number of visitors of your link.',
+            img: projInstaGive,
+            name: 'InstaGive (Thesis)',
+            description: 'A web base donation platform for the province of Pampanga.',
             onHover: false,
-            link: 'https://traq.vercel.app/url/AesHz',
+            link: 'https://traq.vercel.app/url/uaw2C',
             techStack: [
-                {id: 1, name: 'Django'},
-                {id: 2, name: 'React'},
-                {id: 3, name: 'Redux'},
-                {id: 4, name: 'PostgreSQL'},
+                {id: 1, name: 'MongoDB'},
+                {id: 2, name: 'Express'},
+                {id: 3, name: 'React'},
+                {id: 4, name: 'Node'},
+                {id: 5, name: 'Redux'},
             ]
         },
     ])
-
+    
     const handleMouseEnter = selectedProject => {
         const projectListDisableHover = projectList.map(project => { return {...project, onHover: false} })
         const newProjectList = projectListDisableHover.map(project => project.id === selectedProject.id ? {...project, onHover: true} : project)
         setProjectList(newProjectList)
     }
-
+    
     const handleMouseLeave = () => {
         const newProjectList = projectList.map(project => { return {...project, onHover: false} })
         setProjectList(newProjectList)
