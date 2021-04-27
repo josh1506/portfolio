@@ -4,10 +4,10 @@ import {useWindowScroll} from 'react-use';
 
 import LeftArrow from '../common/LeftArrow'
 import RightArrow from '../common/RightArrow'
-import symph_logo from '../assets/img/symph_logo.png'
-import ccs_logo from '../assets/img/CCS_logo.png'
-import jcfc_logo from '../assets/img/jcfc_logo.png'
-import olfu_logo from '../assets/img/OLFU_official_logo.png'
+import symph_logo from '../assets/img/company/symph_logo.png'
+// import ccs_logo from '../assets/img/university/CCS_logo.png'
+import jcfc_logo from '../assets/img/university/jcfc_logo.png'
+import olfu_logo from '../assets/img/university/OLFU_official_logo.png'
 import '../assets/styles/pages/about.css'
 
 const animatePage = {
@@ -19,6 +19,9 @@ const animatePage = {
         transition: {
             staggerChildren: 1.6
         }
+    },
+    onExit: {
+        opacity: 0
     }
 }
 
@@ -50,9 +53,9 @@ const animateMessage = {
 const animateMessageContainer = {
     hidden: { opacity: 0 },
     visible: {
-      opacity: 1,
-      transition: {
-          staggerChildren: 0.02
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.02
         }
     }
 }
@@ -145,7 +148,7 @@ const animateExpEducItem = {
     }
 }
 
-const About = () => {
+const About = (props) => {
     const aboutMe = "I'm a graduate student from Our Lady of Fatima University with a bachelor of Science degree in Information Technology"
     const topSkills = [
         'Python',
@@ -221,31 +224,35 @@ const About = () => {
 
     return (
         <React.Fragment>
-            <LeftArrow />
+            <LeftArrow {...props} route='' />
             <motion.div
                 variants={animatePage}
                 initial='hidden'
                 animate='visible'
+                exit='onExit'
                 className='about-container'
             >
                 <motion.h1
                     variants={animateTitle}
                     className='page-title'
                 >About Me:</motion.h1>
-                    <motion.div className="d-flex center box-container about-me-container" variants={animateMessageContainer}>
-                        <motion.div
-                            variants={animateMessageContainer}
-                            className='d-flex page-normal-text about-content-container'
-                        >
-                            {[...aboutMe].map((letter, index) =>
-                                <motion.p
-                                style={{float: 'left'}}
-                                    key={index}
-                                    variants={animateMessage}
-                                >{letter}</motion.p>
-                            )}
+                    <div className="about-details-container">
+                        <motion.div className="d-flex center box-container about-me-container" variants={animateMessageContainer}>
+                            <motion.div
+                                variants={animateMessageContainer}
+                                className='d-flex page-normal-text about-content-container'
+                            >
+                                {[...aboutMe].map((letter, index) =>
+                                    <motion.p
+                                    style={{float: 'left'}}
+                                        key={index}
+                                        variants={animateMessage}
+                                        className='about-content'
+                                    >{letter}</motion.p>
+                                )}
+                            </motion.div>
                         </motion.div>
-                    </motion.div>
+                    </div>
                 <div>
                     <motion.h3
                         variants={animateSkillTitle}
@@ -286,10 +293,10 @@ const About = () => {
                                 variants={animateExpEducItem}
                             >
                                 <img src={company.img} alt="company_logo" width='150px' />
-                                <div>
-                                    <p>{company.name}</p>
-                                    <p>{company.role}</p>
-                                    <p>{company.date}</p>
+                                <div className='company-detail'>
+                                    <p className='company-name'>{company.name}</p>
+                                    <p className='company-role'>{company.role}</p>
+                                    <p className='company-date'>{company.date}</p>
                                 </div>
                             </motion.div>
                         )}
@@ -305,17 +312,17 @@ const About = () => {
                                 variants={animateExpEducItem}
                             >
                                 <img src={school.img} alt="school_logo" width='150px' />
-                                <div>
-                                    <p>{school.name}</p>
-                                    <p>{school.course}</p>
-                                    <p>{school.year}</p>
+                                <div className='school-detail'>
+                                    <p className='school-name'>{school.name}</p>
+                                    <p className='school-course'>{school.course}</p>
+                                    <p className='school-year'>{school.year}</p>
                                 </div>
                             </motion.div>
                         )}
                     </div>
                 </motion.div>}
             </motion.div>
-            <RightArrow />
+            <RightArrow {...props} route='projects' />
         </React.Fragment>
     )
 }
