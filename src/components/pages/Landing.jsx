@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 
 import LeftArrow from '../common/LeftArrow'
 import RightArrow from '../common/RightArrow'
+import imgLogo from '../assets/img/others/21004063-new.png'
 import '../assets/styles/pages/landing.css'
 
 const animateContainer = {
@@ -12,6 +13,9 @@ const animateContainer = {
         transition: {
             staggerChildren: 1.7
         }
+    },
+    onExit: {
+        opacity: 0
     }
 }
 
@@ -83,7 +87,28 @@ const animateRole = {
     },
 }
 
-const Landing = () => {
+const animateBackgroundImg = {
+    hidden: {
+        x: 100,
+        y: 50,
+        zIndex: -1,
+        scale: 0.5,
+        opacity: 0
+    },
+    visible: {
+        x: 0,
+        y: 0,
+        zIndex: -1,
+        scale: 1,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            delay: 5.9
+        }
+    },
+}
+
+const Landing = (props) => {
     const greetingMessage = 'Hello my name is'
     const firstName = 'Joshua Michael'
     const lastName = 'Jabor'
@@ -91,12 +116,13 @@ const Landing = () => {
     
     return (
         <React.Fragment>
-            <LeftArrow />
+            <LeftArrow {...props} route='contact' />
 
             <motion.div
                 variants={animateContainer}
                 initial='hidden'
                 animate='visible'
+                exit='onExit'
                 className='landing-container'
             >
                 <div className='landing-content-container'>
@@ -147,11 +173,15 @@ const Landing = () => {
                     </motion.div>
                 </div>
                 <div className='landing-image-container'>
-                    <motion.image />
+                    <motion.img 
+                        alt="photo here"
+                        src={imgLogo}
+                        variants={animateBackgroundImg}
+                    />
                 </div>
             </motion.div>
 
-            <RightArrow />
+            <RightArrow  {...props} route='about' />
         </React.Fragment>
     )
 }
