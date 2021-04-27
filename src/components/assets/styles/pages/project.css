@@ -11,6 +11,7 @@
     border: 1px solid #4acfac;
     border-end-end-radius: 15px;
     border-end-start-radius: 15px;
+    background-color: #000;
 }
 
 .project-detail-container {
@@ -34,4 +35,5 @@
     padding: 5px 10px;
     margin: 3px 5px;
     border-radius: 50px;
+    background-color: #222;
 }
