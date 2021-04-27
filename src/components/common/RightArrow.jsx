@@ -28,6 +28,9 @@ const arrowTop = {
         transition: {
             duration: 0.2
         }
+    },
+    onExit: {
+        opacity: 0
     }
 }
 
@@ -54,6 +57,9 @@ const arrowBottom = {
         transition: {
             duration: 0.2
         }
+    },
+    onExit: {
+        opacity: 0
     }
 }
 
@@ -64,16 +70,22 @@ const RightArrow = (props) => {
     return (
         <div 
             className='arrow-container' 
-            style={{right: 0, borderLeft: '2px salmon solid'}}
+            style={{right: 0, borderLeft: '2px #4acfac solid'}}
             onMouseEnter={() => setBtnRightHover(true)} 
             onMouseLeave={() => setBtnRightHover(false)}
-            onClick={() => setBtnRightClick(true)}
+            onClick={() => {
+                setBtnRightClick(true)
+                setTimeout(() => {
+                    props.history.push(`/${props.route}`)
+                }, 500);
+            }}
         >
             <div>
                 <motion.div
                     variants={arrowTop}
                     initial='hidden'
                     animate={btnRightClick ? 'onClick' : btnRightHover? 'onHover' : 'visible'}
+                    exit='onExit'
                     className='arrow'
                     style={{right: 0}}
                 />
@@ -81,6 +93,7 @@ const RightArrow = (props) => {
                     variants={arrowBottom}
                     initial='hidden'
                     animate={btnRightClick ? 'onClick' : btnRightHover? 'onHover' : 'visible'}
+                    exit='onExit'
                     className='arrow'
                     style={{right: 0}}
                 />
