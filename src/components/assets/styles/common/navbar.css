@@ -1,0 +1,31 @@
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 5%;
+    height: 6vh;
+    width: 90%;
+    border-bottom: 0.4vh solid #4acfac;
+    background-color: #081b33;
+}
+
+nav div {
+    padding-left: 5vh;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-link {
+    font-size: 2.5vh;
+    padding: 0 0.5vw;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #4acfac;
+    transform: scale(1.1);
+}
