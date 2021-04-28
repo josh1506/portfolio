@@ -116,7 +116,7 @@ const Projects = (props) => {
             name: 'Portfolio',
             description: 'My portfolio',
             onHover: false,
-            link: 'https://traq.vercel.app/url/AesHz',
+            link: 'https://traq.vercel.app/url/qZNmZ',
             techStack: [
                 {id: 1, name: 'React'},
             ]
