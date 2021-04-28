@@ -8,6 +8,7 @@
     max-width: 100px;
     cursor: pointer;
     background-color: #111;
+    z-index: 3;
 }
 
 .arrow-container:hover {
