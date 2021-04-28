@@ -5,6 +5,7 @@ import LeftArrow from '../common/LeftArrow'
 import RightArrow from '../common/RightArrow'
 import projInstaGive from '../assets/img/projects/project_instagive.PNG'
 import projTodoApp from '../assets/img/projects/project_todo.PNG'
+import projPortfolio from '../assets/img/projects/project_portfolio.PNG'
 import projTraq from '../assets/img/projects/project_traq.PNG'
 import '../assets/styles/pages/project.css'
 
@@ -110,7 +111,18 @@ const animateTechStack = {
 const Projects = (props) => {
     const [projectList, setProjectList] = useState([
         {
-            id: 1,
+            id: 4,
+            img: projPortfolio,
+            name: 'Portfolio',
+            description: 'My portfolio',
+            onHover: false,
+            link: 'https://traq.vercel.app/url/AesHz',
+            techStack: [
+                {id: 1, name: 'React'},
+            ]
+        },
+        {
+            id: 3,
             img: projTraq,
             name: 'Traq',
             description: 'A URL tracker for measure the success of your marketing campaigns, helping you to track the number of visitors of your link.',
@@ -138,7 +150,7 @@ const Projects = (props) => {
             ]
         },
         {
-            id: 3,
+            id: 1,
             img: projInstaGive,
             name: 'InstaGive (Thesis)',
             description: 'A web base donation platform for the province of Pampanga.',
