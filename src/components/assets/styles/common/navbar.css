@@ -1,12 +1,13 @@
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    margin-left: 5%;
+    padding-left: 5%;
     height: 6vh;
-    width: 90%;
+    width: 100%;
     border-bottom: 0.4vh solid #4acfac;
     background-color: #000;
+    z-index: 2;
 }
 
 nav div {
@@ -28,4 +29,45 @@ nav div {
 .nav-link:hover {
     color: #4acfac;
     transform: scale(1.1);
+}
+
+/* Tablet */
+@media only screen and (max-width: 1025px) {
+    nav {
+        margin-left: 0;
+        height: 7vh;
+    }
+    
+    nav div {
+        padding-left: 1vw;
+    }
+    
+    .nav-link {
+        font-size: 1.5vh;
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    nav {
+        height: 7vh;
+    }
+    
+    nav div {
+        padding-left: 1vw;
+    }
+    
+    .nav-link {
+        font-size: 1.5vh;
+        padding-top: 15px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 415px) {
+    .nav-link {
+        font-size: 1.5vh;
+        padding-top: 15px;
+        padding-right: 5px;
+    }
 }
