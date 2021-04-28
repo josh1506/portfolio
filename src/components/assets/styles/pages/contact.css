@@ -32,6 +32,7 @@
     font-size: 20px;
     min-height: 150px;
     resize: none;
+    white-space: pre-wrap
 }
 
 .contact-button-container {
@@ -49,6 +50,10 @@
     cursor: pointer;
     border-radius: 5px;
     color: #fff;
+}
+
+.contact-button-container button:disabled {
+    cursor: not-allowed;
 }
 
 .contact-image-container {
@@ -73,4 +78,25 @@
 
 .icon-link:hover {
     color: #4acfac;
+}
+
+@media only screen and (max-width: 415px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-left-img {
+        display: none;
+        background-color: saddlebrown;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .icon-link {
+        margin: 0 8px;
+        transition: ease-in-out 0.3s;
+    }
 }
