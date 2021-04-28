@@ -137,7 +137,7 @@ const animateExpEducTitle = {
 const animateExpEducItem = {
     hidden: {
         opacity: 0,
-        y: 100
+        y: -100
     },
     visible: {
         opacity: 1,
@@ -216,7 +216,7 @@ const About = (props) => {
         },
     ]
 
-  const {y} = useWindowScroll();
+    const {y} = useWindowScroll();
 
     return (
         <React.Fragment>
@@ -261,6 +261,7 @@ const About = (props) => {
                         >
                             {topSkills.map(skill => 
                                 <motion.p 
+                                key={skill}
                                 className='d-flex box-container'
                                 variants={animateSkillItem}
                                 >{skill}</motion.p>
@@ -273,13 +274,14 @@ const About = (props) => {
                         >
                             {otherSkills.map(skill => 
                                 <motion.p 
+                                    key={skill}
                                     className='d-flex box-container'
                                     variants={animateSkillItem}
                                 >{skill}</motion.p>)}
                         </motion.div>
                     </div>
                 </div>
-                {y >= 500 && <motion.div variants={animateExpEducContainer}>
+                {y >= 340 && <motion.div variants={animateExpEducContainer}>
                     <motion.h3 className='page-subtitle' variants={animateExpEducTitle}>Experience</motion.h3>
                     <div>
                         {expereince.map(company => 
@@ -288,7 +290,7 @@ const About = (props) => {
                                 key={company.id}
                                 variants={animateExpEducItem}
                             >
-                                <img src={company.img} alt="company_logo" width='150px' />
+                                <img src={company.img} alt="company_logo" className='about-img' />
                                 <div className='company-detail'>
                                     <p className='company-name'>{company.name}</p>
                                     <p className='company-role'>{company.role}</p>
@@ -298,7 +300,7 @@ const About = (props) => {
                         )}
                     </div>
                 </motion.div>}
-                {y >= 800 && <motion.div variants={animateExpEducContainer}>
+                {y >= 550 && <motion.div variants={animateExpEducContainer}>
                     <motion.h3 className='page-subtitle' variants={animateExpEducTitle}>Education</motion.h3>
                     <div>
                         {education.map(school => 
@@ -307,7 +309,7 @@ const About = (props) => {
                                 key={school.id} 
                                 variants={animateExpEducItem}
                             >
-                                <img src={school.img} alt="school_logo" width='150px' />
+                                <img src={school.img} alt="school_logo" className='about-img' />
                                 <div className='school-detail'>
                                     <p className='school-name'>{school.name}</p>
                                     <p className='school-course'>{school.course}</p>
