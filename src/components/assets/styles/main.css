@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #46494c;
     color: #fff;
     cursor: pointer;
+    z-index: 4;
 }
 
 .landing-modal {
@@ -102,4 +103,39 @@ h1, h2, h3, h4, h5, h6, p {
     width: 70vw;
     font-size: 40px;
     cursor: pointer;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1025px) {
+    .page-title {
+        font-size: 4vw;
+        margin-top: 15vh;
+    }
+
+    .page-subtitle {
+        font-size: 3.5vw;
+        margin-top: 10px;
+    }
+    
+    .music-btn {
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+
+    .landing-modal h1 {
+        font-size: 24vw;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 415px) {
+    .page-title {
+        font-size: 4vw;
+        margin-top: 15vh;
+    }
+
+    .page-subtitle {
+        font-size: 3.5vw;
+        margin-top: 10px;
+    }
 }
