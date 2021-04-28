@@ -205,7 +205,7 @@ const About = (props) => {
             img: jcfc_logo,
             name: 'Jose C. Feliciano College',
             course: 'Bachelor of Science Marine Transportation',
-            year: 'Sep. 2016 - March. 2018'
+            year: 'Sep. 2016 - March. 2017'
         },
         {   
             id: 3,
