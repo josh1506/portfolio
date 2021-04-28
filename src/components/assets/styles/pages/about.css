@@ -92,3 +92,124 @@
 .school-year {
     font-size: 15px;
 }
+
+.about-img {
+    width: 150px;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+    .about-content {
+        font-size: 13px;
+    }
+    
+    .about-content-container {
+        padding: 30px;
+    }
+
+    .about-details-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .about-exp-educ-container {
+        margin: 15px 0;
+    }
+    
+    .about-skill-container p{
+        width: 34vw;
+        margin: 5px 10px;
+        text-align: center;
+    }
+    
+    .company-name {
+        font-size: 15px;
+    }
+    
+    .company-role {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    
+    .company-date {
+        font-size: 12px;
+    }
+    
+    .school-name {
+        font-size: 15px;
+    }
+    
+    .school-course {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    
+    .school-year {
+        font-size: 12px;
+    }
+
+    .about-img {
+        width: 100px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 415px) {
+    .about-content {
+        font-size: 6.5px;
+    }
+    
+    .about-content-container {
+        width: 100vw;
+        padding: 10px 5px;
+    }
+    .about-details-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .about-exp-educ-container {
+        margin: 15px 0;
+    }
+
+    .about-skill-container {
+        grid-template-columns: auto;
+    }
+    
+    .about-skill-container p{
+        font-size: 9px;
+        width: 68vw;
+        margin: 5px 10px;
+        text-align: center;
+    }
+    
+    .company-name {
+        font-size: 10px;
+    }
+    
+    .company-role {
+        font-size: 9px;
+        margin: 5px 0;
+    }
+    
+    .company-date {
+        font-size: 8.5px;
+    }
+    
+    .school-name {
+        font-size: 10px;
+    }
+    
+    .school-course {
+        font-size: 9px;
+        margin: 5px 0;
+    }
+    
+    .school-year {
+        font-size: 8.5px;
+    }
+
+    .about-img {
+        width: 70px;
+    }
+}
