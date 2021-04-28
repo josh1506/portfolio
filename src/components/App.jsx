@@ -28,7 +28,7 @@ function App(props) {
     useEffect(() => {
         setTimeout(() => {
             setShowButton(true)
-        }, 1500);
+        }, 1000);
     }, [])
 
     return (
@@ -44,6 +44,7 @@ function App(props) {
                     <h1>My Portfolio</h1>
                     <p>Click the button to open</p>
                     <img src='devPhoto' alt="wallpaper"/>
+                    <img src='devPhoto' alt="background"/>
                         {showButton && <button onClick={handleModalClick}>Click here to enter</button>}
                 </div> :
                 
