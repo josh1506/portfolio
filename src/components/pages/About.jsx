@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import {useWindowScroll} from 'react-use';
 
@@ -177,7 +177,7 @@ const About = (props) => {
         'Firebase',
         'Jinja',
         'Heroku',
-        'Varcel',
+        'Vercel',
         'Netlify',
         'Dialogflow',
     ]
@@ -215,6 +215,10 @@ const About = (props) => {
             year: 'June. 2014 – March.  2016'
         },
     ]
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const {y} = useWindowScroll();
 
