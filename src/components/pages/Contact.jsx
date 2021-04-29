@@ -49,6 +49,10 @@ const Contact = (props) => {
         });
     }
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <React.Fragment>
             <LeftArrow  {...props} route='projects' />
