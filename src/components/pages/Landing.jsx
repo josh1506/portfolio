@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 import LeftArrow from '../common/LeftArrow'
@@ -114,6 +114,10 @@ const Landing = (props) => {
     const lastName = 'Jabor'
     const role = "I'm a Python Developer..."
     
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <React.Fragment>
             <LeftArrow {...props} route='contact' />
