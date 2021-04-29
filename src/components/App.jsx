@@ -37,7 +37,7 @@ function App(props) {
                 src={[music]}
                 playing={onMusicPlay}
                 loop={true}
-                volume={0.5}
+                volume={0.7}
             />
             {onModalShow ? 
                 <div className='landing-modal'>
