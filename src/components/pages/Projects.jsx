@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 import LeftArrow from '../common/LeftArrow'
@@ -166,6 +166,10 @@ const Projects = (props) => {
         },
     ])
     
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const handleMouseEnter = selectedProject => {
         const projectListDisableHover = projectList.map(project => { return {...project, onHover: false} })
         const newProjectList = projectListDisableHover.map(project => project.id === selectedProject.id ? {...project, onHover: true} : project)
