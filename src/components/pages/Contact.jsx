@@ -244,11 +244,9 @@ const Contact = (props) => {
                                         href='https://traq.vercel.app/url/rmYJZ'
                                         initial={{
                                             opacity: 0,
-                                            y: 100,
                                         }}
                                         animate={{
                                             opacity: 1,
-                                            y: 0,
                                         }}
                                         transition={{
                                             delay: 5.6,
@@ -262,11 +260,9 @@ const Contact = (props) => {
                                         href='https://traq.vercel.app/url/IQTqM'
                                         initial={{
                                             opacity: 0,
-                                            y: 100,
                                         }}
                                         animate={{
                                             opacity: 1,
-                                            y: 0,
                                         }}
                                         transition={{
                                             delay: 5.9,

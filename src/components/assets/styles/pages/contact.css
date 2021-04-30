@@ -86,6 +86,10 @@
         flex-direction: column;
     }
 
+    .contact-container {
+        margin-top: 80px;
+    }
+
     .contact-left-img {
         display: none;
         background-color: saddlebrown;
