@@ -124,7 +124,7 @@ const Projects = (props) => {
             img: projTraq,
             name: "Traq",
             description:
-                "A URL tracker for measure the success of your marketing campaigns, helping you to track the number of visitors of your link.",
+                "A URL tracker to measure the success of your marketing campaigns, helping you to track the number of visitors of your link.",
             onHover: false,
             link: "https://traq.vercel.app/url/AesHz",
             techStack: [
