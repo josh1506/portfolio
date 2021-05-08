@@ -19,7 +19,7 @@ nav div {
 
 .nav-link {
     font-size: 2.5vh;
-    padding: 0 0.5vw;
+    padding: 0 1vw;
     cursor: pointer;
     transition: ease-in-out 0.3s;
     text-decoration: none;
@@ -37,11 +37,11 @@ nav div {
         margin-left: 0;
         height: 7vh;
     }
-    
+
     nav div {
         padding-left: 1vw;
     }
-    
+
     .nav-link {
         font-size: 1.5vh;
         padding-top: 15px;
@@ -52,11 +52,11 @@ nav div {
     nav {
         height: 7vh;
     }
-    
+
     nav div {
         padding-left: 1vw;
     }
-    
+
     .nav-link {
         font-size: 1.5vh;
         padding-top: 15px;
