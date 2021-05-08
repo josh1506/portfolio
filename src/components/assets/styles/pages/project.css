@@ -46,28 +46,28 @@
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .project-container {
         width: 350px;
         margin-bottom: 100px;
     }
-    
+
     .project-detail-container {
         padding: 20px;
     }
-    
+
     .project-title {
         font-weight: bold;
         font-size: 22px;
         letter-spacing: 2px;
     }
-    
+
     .techstack-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .techstack-container p {
         border: 1px solid #4acfac;
         padding: 5px 10px;
