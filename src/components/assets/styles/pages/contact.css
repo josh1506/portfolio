@@ -32,7 +32,7 @@
     font-size: 20px;
     min-height: 150px;
     resize: none;
-    white-space: pre-wrap
+    white-space: pre-wrap;
 }
 
 .contact-button-container {
@@ -44,9 +44,9 @@
 .contact-button-container button {
     border: 1px solid #4acfac;
     background-color: #46494c;
-    padding: 5px 10px ;
+    padding: 5px 10px;
     font-size: 15px;
-    font-family: 'Zen Dots', cursive;
+    font-family: "Zen Dots", cursive;
     cursor: pointer;
     border-radius: 5px;
     color: #fff;
