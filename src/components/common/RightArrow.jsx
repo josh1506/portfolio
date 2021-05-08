@@ -1,105 +1,117 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
-import '../assets/styles/common/arrow.css'
+import "../assets/styles/common/arrow.css";
 
 const arrowTop = {
     initial: {
         opacity: 0,
-        rotate: -360
+        rotate: -360,
     },
     visible: {
         opacity: 1,
-        rotate: 30, 
+        rotate: 30,
         y: -12,
         transition: {
-            duration: 0.3
-        }
+            duration: 0.3,
+        },
     },
     onHover: {
-        rotate: 50, 
-        y: -18, 
-        x: 5
+        rotate: 50,
+        y: -18,
+        x: 5,
     },
     onClick: {
-        rotate: [65, 0, 0],  
-        y: [-22, 0, 0], 
-        x: [0, 0, 90], 
+        rotate: [65, 0, 0],
+        y: [-22, 0, 0],
+        x: [0, 0, 90],
         transition: {
-            duration: 0.2
-        }
+            duration: 0.2,
+        },
     },
     onExit: {
-        opacity: 0
-    }
-}
+        opacity: 0,
+    },
+};
 
 const arrowBottom = {
     initial: {
-        rotate: 360
+        rotate: 360,
     },
     visible: {
-        rotate: -30, 
+        rotate: -30,
         y: 12,
         transition: {
-            duration: 0.3
-        }
+            duration: 0.3,
+        },
     },
     onHover: {
-        rotate: -50, 
-        y: 18, 
-        x: 5
+        rotate: -50,
+        y: 18,
+        x: 5,
     },
     onClick: {
-        rotate: [-65, 0, 0], 
-        y: [22, 0, 0], 
-        x:[0, 0, 90], 
+        rotate: [-65, 0, 0],
+        y: [22, 0, 0],
+        x: [0, 0, 90],
         transition: {
-            duration: 0.2
-        }
+            duration: 0.2,
+        },
     },
     onExit: {
-        opacity: 0
-    }
-}
+        opacity: 0,
+    },
+};
 
 const RightArrow = (props) => {
-    const [btnRightHover, setBtnRightHover] = useState(false)
-    const [btnRightClick, setBtnRightClick] = useState(false)
+    const [btnRightHover, setBtnRightHover] = useState(false);
+    const [btnRightClick, setBtnRightClick] = useState(false);
 
     return (
-        <div 
-            className='arrow-container' 
-            style={{right: 0, borderLeft: '2px #4acfac solid'}}
-            onMouseEnter={() => setBtnRightHover(true)} 
+        <div
+            className="arrow-container"
+            style={{ right: 0, borderLeft: "2px #4acfac solid" }}
+            onMouseEnter={() => setBtnRightHover(true)}
             onMouseLeave={() => setBtnRightHover(false)}
             onClick={() => {
-                setBtnRightClick(true)
+                setBtnRightClick(true);
                 setTimeout(() => {
-                    props.history.push(`/${props.route}`)
+                    props.history.push(`/${props.route}`);
                 }, 500);
             }}
         >
             <div>
                 <motion.div
                     variants={arrowTop}
-                    initial='hidden'
-                    animate={btnRightClick ? 'onClick' : btnRightHover? 'onHover' : 'visible'}
-                    exit='onExit'
-                    className='arrow'
-                    style={{right: 0}}
+                    initial="hidden"
+                    animate={
+                        btnRightClick
+                            ? "onClick"
+                            : btnRightHover
+                            ? "onHover"
+                            : "visible"
+                    }
+                    exit="onExit"
+                    className="arrow"
+                    style={{ right: 0 }}
                 />
                 <motion.div
                     variants={arrowBottom}
-                    initial='hidden'
-                    animate={btnRightClick ? 'onClick' : btnRightHover? 'onHover' : 'visible'}
-                    exit='onExit'
-                    className='arrow'
-                    style={{right: 0}}
+                    initial="hidden"
+                    animate={
+                        btnRightClick
+                            ? "onClick"
+                            : btnRightHover
+                            ? "onHover"
+                            : "visible"
+                    }
+                    exit="onExit"
+                    className="arrow"
+                    style={{ right: 0 }}
                 />
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default RightArrow
+export default RightArrow;
