@@ -47,7 +47,7 @@
         align-items: flex-start;
         margin-top: 15vh;
     }
-    
+
     .landing-image-container {
         display: flex;
     }
@@ -64,11 +64,11 @@
         align-items: flex-start;
         margin-top: 13vh;
     }
-    
+
     .landing-image-container {
         display: flex;
     }
-    
+
     .landing-name {
         font-size: 50px;
     }
@@ -93,11 +93,11 @@
         margin-right: 15vw;
         margin-bottom: 25vh;
     }
-    
+
     .landing-image-container {
         display: flex;
     }
-    
+
     .landing-name {
         font-size: 22px;
     }
