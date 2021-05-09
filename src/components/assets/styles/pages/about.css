@@ -303,4 +303,13 @@
         overflow-y: auto;
         padding-bottom: 15px;
     }
+
+    .skill-img {
+        width: 80vw;
+        margin-bottom: 50px;
+    }
+
+    .skill-graph-container {
+        margin: 0 5px;
+    }
 }
