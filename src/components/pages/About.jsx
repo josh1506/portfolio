@@ -216,31 +216,33 @@ const About = (props) => {
     const [skillPage, setSkillPage] = useState(0);
     const skillList = [
         {
-            title: "Top Skills",
+            title: "Primary Skills",
             list: [
-                { name: "Python", knowledge: 85 },
-                { name: "Django", knowledge: 83 },
-                { name: "JavaScript", knowledge: 84 },
-                { name: "React", knowledge: 82 },
+                { name: "Python", knowledge: 82 },
+                { name: "Django", knowledge: 74 },
+                { name: "JavaScript", knowledge: 78 },
+                { name: "React", knowledge: 72 },
             ],
         },
         {
             title: "Programming Language",
             list: [
-                { name: "Python", knowledge: 85 },
-                { name: "JavaScript", knowledge: 84 },
+                { name: "Python", knowledge: 82 },
+                { name: "JavaScript", knowledge: 78 },
             ],
         },
         {
             title: "Web/Mobile Development",
             list: [
-                { name: "Django", knowledge: 83 },
-                { name: "React", knowledge: 82 },
-                { name: "Redux", knowledge: 77 },
+                { name: "Django", knowledge: 74 },
+                { name: "React", knowledge: 72 },
+                { name: "Redux", knowledge: 57 },
+                { name: "React Native", knowledge: 34 },
                 { name: "HTML", knowledge: 93 },
                 { name: "CSS", knowledge: 87 },
-                { name: "Bootstrap", knowledge: 94 },
-                { name: "React Bootstrap", knowledge: 83 },
+                { name: "Bootstrap", knowledge: 86 },
+                { name: "React Bootstrap", knowledge: 73 },
+                { name: "Material UI", knowledge: 46 },
                 { name: "Jinja", knowledge: 62 },
                 { name: "Django Template Language", knowledge: 65 },
             ],
@@ -248,13 +250,13 @@ const About = (props) => {
         {
             title: "Cloud/Database",
             list: [
-                { name: "PostgreSQL", knowledge: 83 },
-                { name: "MongoDB", knowledge: 72 },
+                { name: "PostgreSQL", knowledge: 73 },
+                { name: "MongoDB", knowledge: 62 },
                 { name: "Amazon Web Services", knowledge: 30 },
                 { name: "Amazon RDS", knowledge: 27 },
                 { name: "Amazon S3", knowledge: 26 },
-                { name: "SQL", knowledge: 80 },
-                { name: "NoSQL", knowledge: 72 },
+                { name: "SQL", knowledge: 73 },
+                { name: "NoSQL", knowledge: 62 },
                 { name: "Firebase", knowledge: 68 },
             ],
         },
@@ -263,7 +265,7 @@ const About = (props) => {
             list: [
                 { name: "GitHub", knowledge: 84 },
                 { name: "Git", knowledge: 78 },
-                { name: "Heroku", knowledge: 82 },
+                { name: "Heroku", knowledge: 75 },
                 { name: "Vercel", knowledge: 73 },
                 { name: "Netlify", knowledge: 70 },
                 { name: "Bitbucket", knowledge: 79 },
