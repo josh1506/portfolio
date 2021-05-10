@@ -75,7 +75,7 @@ const animateRoleContainer = {
 
 const animateRole = {
     hidden: {
-        y: 100,
+        y: 400,
         opacity: 0,
     },
     visible: {
@@ -116,7 +116,7 @@ const Landing = (props) => {
     }, []);
 
     return (
-        <React.Fragment>
+        <div style={{overflowY: 'hidden'}}>
             <LeftArrow {...props} route="contact" />
 
             <motion.div
@@ -179,7 +179,7 @@ const Landing = (props) => {
             </motion.div>
 
             <RightArrow {...props} route="about" />
-        </React.Fragment>
+        </div>
     );
 };
 
