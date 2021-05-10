@@ -117,7 +117,11 @@ const Projects = (props) => {
             description: "My portfolio",
             onHover: false,
             link: "https://traq.vercel.app/url/qZNmZ",
-            techStack: [{ id: 1, name: "React" }],
+            techStack: [
+                { id: 1, name: "React" },
+                { id: 2, name: 'HTML'},
+                { id: 3, name: 'CSS'},
+            ],
         },
         {
             id: 3,
@@ -132,6 +136,8 @@ const Projects = (props) => {
                 { id: 2, name: "React" },
                 { id: 3, name: "Redux" },
                 { id: 4, name: "PostgreSQL" },
+                { id: 5, name: 'HTML'},
+                { id: 6, name: 'CSS'}
             ],
         },
         {
@@ -146,6 +152,8 @@ const Projects = (props) => {
                 { id: 2, name: "React" },
                 { id: 3, name: "Redux" },
                 { id: 4, name: "PostgreSQL" },
+                { id: 5, name: 'HTML'},
+                { id: 6, name: 'CSS'},
             ],
         },
         {
@@ -162,6 +170,9 @@ const Projects = (props) => {
                 { id: 3, name: "React" },
                 { id: 4, name: "Node" },
                 { id: 5, name: "Redux" },
+                { id: 6, name: 'HTML'},
+                { id: 7, name: 'CSS'},
+                { id: 8, name: 'Material UI'},
             ],
         },
     ]);

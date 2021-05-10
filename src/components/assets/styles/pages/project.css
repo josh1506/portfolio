@@ -76,3 +76,10 @@
         background-color: #222;
     }
 }
+
+/* Mobile */
+@media only screen and (max-width: 415px) {
+    .project-container {
+        margin-bottom: 50px;
+    }
+}
