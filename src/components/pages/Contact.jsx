@@ -69,7 +69,7 @@ const Contact = (props) => {
                 style={{
                     width: "100%",
                     overflow: "hidden",
-                    paddingBottom: 100,
+                    paddingBottom: 120,
                 }}
             >
                 <div className="contact">
