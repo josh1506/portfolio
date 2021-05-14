@@ -180,7 +180,7 @@ const Contact = (props) => {
                                     duration: 1,
                                 }}
                             >
-                                Email:
+                                Your email:
                             </motion.label>
                             <motion.input
                                 type="email"
