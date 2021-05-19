@@ -278,8 +278,7 @@ const About = (props) => {
         {
             id: 1,
             img: symph_logo,
-            name:
-                "Symph - Mobile, Web Design and Development Studio Philippines",
+            name: "Symph - Mobile, Web Design and Development Studio Philippines",
             role: "Web and Mobile App Development Intern",
             date: "Feb, 2021 - May, 2021",
         },
@@ -298,7 +297,7 @@ const About = (props) => {
             img: jcfc_logo,
             name: "Jose C. Feliciano College",
             course: "Bachelor of Science Marine Transportation",
-            year: "Sep. 2016 - March. 2017",
+            year: "June. 2016 - March. 2017",
         },
         {
             id: 3,
