@@ -232,6 +232,14 @@ const About = (props) => {
             ],
         },
         {
+            title: "Analytics",
+            list: [
+                { name: "SQL", knowledge: 78 },
+                { name: "Tableau", knowledge: 60 },
+                { name: "Excel", knowledge: 80 },
+            ],
+        },
+        {
             title: "Web/Mobile Development",
             list: [
                 { name: "Django", knowledge: 74 },
@@ -251,11 +259,11 @@ const About = (props) => {
             title: "Cloud/Database",
             list: [
                 { name: "PostgreSQL", knowledge: 73 },
+                { name: "SQL", knowledge: 78 },
                 { name: "MongoDB", knowledge: 62 },
                 { name: "Amazon Web Services", knowledge: 30 },
                 { name: "Amazon RDS", knowledge: 27 },
                 { name: "Amazon S3", knowledge: 26 },
-                { name: "SQL", knowledge: 73 },
                 { name: "NoSQL", knowledge: 62 },
                 { name: "Firebase", knowledge: 68 },
             ],
@@ -265,6 +273,8 @@ const About = (props) => {
             list: [
                 { name: "GitHub", knowledge: 84 },
                 { name: "Git", knowledge: 78 },
+                { name: "NumPy", knowledge: 60 },
+                { name: "Pandas", knowledge: 60 },
                 { name: "Heroku", knowledge: 75 },
                 { name: "Vercel", knowledge: 73 },
                 { name: "Netlify", knowledge: 70 },
