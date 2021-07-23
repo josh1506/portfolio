@@ -23,7 +23,7 @@
 }
 
 .landing-content-container {
-    width: 100px;
+    width: 150%;
     display: inline-block;
 }
 
@@ -43,6 +43,10 @@
 
 /* Tablet */
 @media only screen and (max-width: 1025px) {
+    .landing-content-container {
+        width: 100%;
+    }
+
     .landing-container {
         align-items: flex-start;
         margin-top: 15vh;
