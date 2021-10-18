@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import LeftArrow from "../common/LeftArrow";
 import RightArrow from "../common/RightArrow";
+import projAxieTracker from "../assets/img/projects/project_axie_tracker.PNG";
 import projInstaGive from "../assets/img/projects/project_instagive.PNG";
 import projTodoApp from "../assets/img/projects/project_todo.PNG";
 import projPortfolio from "../assets/img/projects/project_portfolio.PNG";
@@ -111,6 +112,23 @@ const animateTechStack = {
 const Projects = (props) => {
     const [projectList, setProjectList] = useState([
         {
+            id: 5,
+            img: projAxieTracker,
+            name: "Axie Infinity Tracker",
+            description:
+                "Axie Infinity Tracker helps you track the earnings of your scholars.",
+            onHover: false,
+            link: "https://traq.vercel.app/url/rg4zO",
+            techStack: [
+                { id: 1, name: "Django" },
+                { id: 2, name: "React" },
+                { id: 3, name: "Redux" },
+                { id: 4, name: "PostgreSQL" },
+                { id: 5, name: "HTML" },
+                { id: 6, name: "CSS" },
+            ],
+        },
+        {
             id: 4,
             img: projPortfolio,
             name: "Portfolio",
@@ -119,8 +137,8 @@ const Projects = (props) => {
             link: "https://traq.vercel.app/url/qZNmZ",
             techStack: [
                 { id: 1, name: "React" },
-                { id: 2, name: 'HTML'},
-                { id: 3, name: 'CSS'},
+                { id: 2, name: "HTML" },
+                { id: 3, name: "CSS" },
             ],
         },
         {
@@ -136,8 +154,8 @@ const Projects = (props) => {
                 { id: 2, name: "React" },
                 { id: 3, name: "Redux" },
                 { id: 4, name: "PostgreSQL" },
-                { id: 5, name: 'HTML'},
-                { id: 6, name: 'CSS'}
+                { id: 5, name: "HTML" },
+                { id: 6, name: "CSS" },
             ],
         },
         {
@@ -152,8 +170,8 @@ const Projects = (props) => {
                 { id: 2, name: "React" },
                 { id: 3, name: "Redux" },
                 { id: 4, name: "PostgreSQL" },
-                { id: 5, name: 'HTML'},
-                { id: 6, name: 'CSS'},
+                { id: 5, name: "HTML" },
+                { id: 6, name: "CSS" },
             ],
         },
         {
@@ -170,9 +188,9 @@ const Projects = (props) => {
                 { id: 3, name: "React" },
                 { id: 4, name: "Node" },
                 { id: 5, name: "Redux" },
-                { id: 6, name: 'HTML'},
-                { id: 7, name: 'CSS'},
-                { id: 8, name: 'Material UI'},
+                { id: 6, name: "HTML" },
+                { id: 7, name: "CSS" },
+                { id: 8, name: "Material UI" },
             ],
         },
     ]);
